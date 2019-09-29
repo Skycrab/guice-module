@@ -10,4 +10,8 @@
  
  * guice-jsonconfig Properties配置文件bean自动装配
  
+ * guice-common
+ 
+    * PropertiesModule 加载properties配置
+ 
  * guice-example 示例代码
