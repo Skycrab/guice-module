@@ -11,6 +11,7 @@
         <module>guice-lifecycle</module>
         <module>guice-example</module>
         <module>guice-jsonconfig</module>
+        <module>guice-common</module>
     </modules>
     <packaging>pom</packaging>
 
