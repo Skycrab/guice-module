@@ -109,8 +109,6 @@ public class LifecycleModule implements Module
   @Override
   public void configure(Binder binder)
   {
-    binder.bindScope(LazySingleton.class, LifecycleScopes.SINGLETON);
-
     getEagerBinder(binder); // Load up the eager binder so that it will inject the empty set at a minimum.
 
     binder.bindScope(ManageLifecycleInit.class, initScope);
@@ -119,7 +117,7 @@ public class LifecycleModule implements Module
     binder.bindScope(ManageLifecycleAnnouncements.class, annoucementsScope);
   }
 
-  @Provides @LazySingleton
+  @Provides @Singleton
   public Lifecycle getLifecycle(final Injector injector)
   {
     final Key<Set<KeyHolder>> keyHolderKey = Key.get(new TypeLiteral<Set<KeyHolder>>(){}, Names.named("lifecycle"));
