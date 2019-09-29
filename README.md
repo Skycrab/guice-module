@@ -8,4 +8,6 @@
 
  * guice-lifecycle 实现生命周期托管
  
+ * guice-jsonconfig Properties配置文件bean自动装配
+ 
  * guice-example 示例代码
