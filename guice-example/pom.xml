@@ -55,6 +55,12 @@
             <version>1.0-SNAPSHOT</version>
             <groupId>com.google.code</groupId>
         </dependency>
+        <dependency>
+            <artifactId>guice-jsonconfig</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <groupId>com.google.code</groupId>
+        </dependency>
+
 
     </dependencies>
 
