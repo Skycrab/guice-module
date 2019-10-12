@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Created by yihaibo on 2019-09-29.
+ * Guice模块绑定覆盖
  */
 public class GuiceOverrideExample {
   public static void main(String[] args) {

@@ -12,6 +12,7 @@ import java.util.Properties;
 
 /**
  * Created by yihaibo on 2019-09-29.
+ * json自动装配
  */
 public class GuiceJsonConfigExample {
   public static void main( String[] args ) {

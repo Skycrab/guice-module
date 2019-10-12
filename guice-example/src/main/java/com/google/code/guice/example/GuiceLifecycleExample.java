@@ -5,8 +5,7 @@ import com.google.inject.*;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Hello world!
- *
+ * Guice 生命周期管理
  */
 public class GuiceLifecycleExample
 {

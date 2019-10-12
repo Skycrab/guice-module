@@ -9,6 +9,7 @@ import java.util.Properties;
 
 /**
  * Created by yihaibo on 2019-09-29.
+ * 加载类路径下配置文件
  */
 public class GuiceCommonPropertiesExample {
   public static void main(String[] args) {

@@ -18,6 +18,7 @@ import java.util.Properties;
 
 /**
  * Created by yihaibo on 2019-10-08.
+ * jersey restful简单列子
  */
 @Slf4j
 public class GuiceJerseryJettyExample {
@@ -51,7 +52,6 @@ public class GuiceJerseryJettyExample {
 
     @Inject
     public IndexResource(ServerConfig serverConfig) {
-      log.info("iiiiiii");
       this.serverConfig = serverConfig;
     }
 
