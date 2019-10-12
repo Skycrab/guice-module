@@ -21,11 +21,15 @@ public class GuiceJsonConfigExample {
         JsonConfigProvider.bind(binder, "druid.server", DruidServerConfig.class);
       }
 
-      @Provides @Singleton
+      @Provides
+      @Singleton
+      /**
+       * Properties代码注入需注意必须为string
+       */
       Properties provideProperties() {
         Properties props = new Properties();
         props.put("druid.server.hostname", "0.0.0.0");
-        props.put("druid.server.port", 3333);
+        props.put("druid.server.port", "3333");
         return props;
       }
 
@@ -33,6 +37,7 @@ public class GuiceJsonConfigExample {
       ObjectMapper provideObjectMapper() {
         return new ObjectMapper();
       }
+
     });
 
     DruidServerConfig druidServerConfig = injector.getInstance(DruidServerConfig.class);
